@@ -1,0 +1,69 @@
+uid-wrapper (1.2.8-1) unstable; urgency=medium
+
+  [ Timo Aaltonen ]
+  * New upstream release.
+  * Migrate to debhelper-compat, bump to 13.
+  * no-soname.diff: Refreshed.
+  * docs: Updated.
+
+  [ Sergio Durigan Junior ]
+  * d/rules: Modernize it with dh sequencer; use hardening when compiling.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Thu, 28 Jan 2021 14:31:52 +0200
+
+uid-wrapper (1.2.4+dfsg1-1) unstable; urgency=medium
+
+  * New upstream release. (Closes: #894794)
+  * Bump debhelper compat to 11.
+  * control: Bump policy to 4.1.3.
+  * control: Update vcs urls.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Wed, 04 Apr 2018 14:08:05 +0300
+
+uid-wrapper (1.2.1+dfsg1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * patches: Refreshed.
+  * control: Bump policy to 3.9.8, no changes.
+  * control: Use https vcs urls.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Tue, 20 Sep 2016 09:10:28 +0300
+
+uid-wrapper (1.2.0+dfsg1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * patches: Remove fix-test-gid.diff, refresh no-soname.diff.
+  * copyright, watch: Filter obj32/* from the tarball, rename source to
+    match.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Wed, 09 Dec 2015 16:27:44 +0200
+
+uid-wrapper (1.1.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * control: Change maintainer, update Vcs. (Closes: #782374)
+  * patches: no-soname.diff updated, remove-access.patch removed (upstream).
+  * fix-test-gid.diff: Fix a failing test.
+  * control: Fix a typo in description.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Fri, 04 Sep 2015 11:55:24 +0300
+
+uid-wrapper (1.0.2-2) unstable; urgency=medium
+
+  * Add patch remove-access.patch: remove use of SYS_access not
+    available on ARM64. Closes: #770307
+  * Bump standards version to 3.9.6 (no changes).
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Sat, 22 Nov 2014 11:48:26 +0000
+
+uid-wrapper (1.0.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Fri, 08 Aug 2014 21:07:45 +0200
+
+uid-wrapper (1.0.1-1) unstable; urgency=low
+
+  * Initial release. Closes: #755557
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Tue, 22 Jul 2014 02:46:19 +0200

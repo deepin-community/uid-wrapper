@@ -1,0 +1,26 @@
+Source: uid-wrapper
+Homepage: http://cwrap.org/uid_wrapper.html
+Section: devel
+Priority: optional
+Maintainer: Debian SSSD Team <pkg-sssd-devel@lists.alioth.debian.org>
+Uploaders: Timo Aaltonen <tjaalton@debian.org>
+Build-Depends: cmake (>= 2.8.8-3~),
+               debhelper-compat (= 13),
+               dh-buildinfo,
+               libcmocka-dev
+XS-Testsuite: autopkgtest
+Standards-Version: 4.1.3
+Vcs-Git: https://salsa.debian.org/sssd-team/uid-wrapper.git
+Vcs-Browser: https://salsa.debian.org/sssd-team/uid-wrapper.git
+
+Package: libuid-wrapper
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: UID wrapper library
+ This is a wrapper for the user, group and hosts NSS API that can
+ simulate uid switching as a regular user. This is useful for
+ testsuites that run as a regular user but need to test
+ privileged functions.
+ .
+ It works as a preload library, which overrides various
+ system functions.
